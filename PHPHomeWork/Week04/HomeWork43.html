@@ -1,0 +1,69 @@
+<!--Добавьте в низ страницы профиля форму отзывов. Форма должна содержать поля:
+- имя комментатора (input)
+- оценка страницы профиля в диапазоне от 1-5 (select)
+- список общих знакомых, с возможностью выбрать одного (radio)
+- полe комментария (textarea)
+- кнопки сброса и отправки (button)
+
+Форма должна отсылать данные по линку: http://localhost/form.php
+form.php скрипт должен обрабатывать входные данные и выводить их на страницу в виде:
+
+Thanks for your comment:
+name: Name
+score: 5
+common friend: Robert Sean Leonard
+comment: My comment text-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PHPHomeWork43</title>
+</head>
+<body>
+<form action="HomeWork43.php" method="post">
+
+    Your name:
+    <input type="text" name="name">
+    </input>
+    <br>
+    <br>
+
+    Your rating:
+    <select name="rating">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <br>
+    <br>
+
+    Common friends:
+    <br>
+    <input type="radio" name="friends" value="Victor"> Victor<br>
+    <input type="radio" name="friends" value="Dmitry"> Dmitry<br>
+    <input type="radio" name="friends" value="Oleg"> Oleg<br>
+    <input type="radio" name="friends" value="Artyom"> Artyom<br>
+    <input type="radio" name="friends" value="Andrey"> Andrey<br>
+    <br>
+
+    Your message:
+    <input type="textarea" name="comment">
+
+    </input>
+    <br>
+    <br>
+
+
+    <input type="button" name="submit" value="Submit">
+    </input>
+    <br>
+    <br>
+    <input type="button" name="delete" value="Delete">
+    </input>
+
+</form>
+</body>
+</html>
